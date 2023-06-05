@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    font-family: 'Poppins' sans-serif;
+    height: auto;
+    width: 100%;
+}
+
+.logo-banner a{
+    background-color: rgba(125, 122, 122, 0.833);
+    background: linear-gradient(rgba(125, 122, 122, 0.833),rgba(37, 36, 36, 0.833));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.logo-banner a img{
+    margin: 0 10px;
+    height: 110px;
+}
+
+.logo-banner a h1{
+    color: black;
+    font-size: 70px;
+}
+
+.nav-links{
+    background-color: rgb(63, 63, 63);
+    width: 100%;
+}
+
+.nav-links ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style: none;
+    
+}
+
+.nav-links ul li a{
+    color: white;
+    display: inline-block;
+    font-family: 'Roboto';
+    margin: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3 ease-in;
+}
+.nav-links ul li:hover{
+    background-color: rgba(57, 57, 57, 0.658);
+}
+
+
+
+nav{
+    border-bottom: 5px solid white;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.495);
+}
+.nav-search{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0 20px;
+    background-color: rgb(26, 26, 26);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.nav-search img{
+    width: 60px;
+}
+.search-bar{
+    display: flex;
+    gap: 0px;
+    border-radius: 50px;
+    overflow: hidden;
+    border:2px solid rgb(35, 100, 199);
+}
+.search-bar input{
+    font-size: 13px;
+    text-align: center;
+    height: 25px;
+    width: 150px;
+    border-style: none;
+}
+.search-bar input:focus{
+    outline: none;
+}
+.search-bar button{
+    cursor: pointer;
+    border-style: none;
+    font-size: 13px;
+    color: white;
+    background-color: rgb(35, 100, 199);
+    height: 25px;
+    width: 35px;
+}
+
+.links ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style: none;
+}
+
+.links ul li a{
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-family: 'Roboto';
+    margin: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3 ease-in;
+}
+.links ul li:hover{
+    background-color: rgba(255, 255, 255, 0.087);
+}
+
+
+/* ...................................................................... */
+
+.news-container{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-container .news-header{
+    text-align: center;
+    margin: 40px 0;
+    width: 80%;
+    color: rgba(0, 0, 0, 0.6);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+    font-size: 25px;
+    font-weight: bolder;
+}
+.news{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+
+/* -------------------------------------------------------------------- */
+/* card */
+
+.card{
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    background-color: black;
+    /* background-image: url(https://via.placeholder.com/400x200); */
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 150px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    position: relative;
+
+}
+.card .text{
+    color: white;
+    font-family: 'Roboto';
+    position: absolute;
+    bottom: 0;
+}
+.card .text p{
+    margin: 5px;
+    font-size: 10px;
+}
+.card .text h3{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------- */
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    height: 400px;
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+}
+
+footer img{
+    height: 100px;
+}
+
+footer h1{
+    color: white;
+    font-size: 60px;
+}
+footer p{
+    color: white;
+    font-size: 20px;
+}
+footer .footer-links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer a{
+    display: inline-block;
+    color: white;
+    margin: 10px;
+}
+
+.footer-icons i{
+    margin: 10px;
+    color: white;
+}
